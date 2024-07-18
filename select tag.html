@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select>
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+        <option value="option3">option3</option>
+    </select>
+
+    <!-- name attribute(Dropdown) -->
+    <from action="/submit" method="post">
+        <label for="dropdown">choose an option:</label>
+        <select id="dropdown" name="option">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option">option3</option>
+        </select>
+        <input type="submit" value="submit">
+
+        <!-- id attribute -->
+        <select id="myDropdown" name="option">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+        </select>
+
+
+        <!-- multiple attribute -->
+        <select multiple name="option">
+            <option value="option1">option1</option>
+            <option value="option2">option2</option>
+            <option value="option3">option3</option>
+         </select>
+
+
+        <!--optgroup  -->
+        <select name="fruits">
+            <optgroup name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+            </optgroup>
+            <optgroup label="Exotic Fruits">
+                <option value="mango">Mango</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="kiwi">Kiwi</option>
+            </optgroup>
+            <optgroup label="Berries">
+                <option value="strawberry">Strawberry</option>
+                <option value="raspberry">Raspberry</option>
+            </optgroup>
+        </select>
+
+
+
+
+
+
+
+    </from>
+
+
+</body>
+
+</html>

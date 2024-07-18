@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css nth-child example with table</title>
+    <style>
+        table {
+            width: 100px;
+            border-collapse: collapse;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        th,
+        td {
+            border: 1px solid;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+        
+        tr:nth-child(3n) {
+            background-color: lightgoldenrodyellow;
+        }
+        
+        tr:nth-child(n+4):nth-child(-n+6) {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>css nth-child example with table</h2>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>item</th>
+                <th>description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>item1</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item2</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item3</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item4</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item5</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item6</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item7</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item8</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item9</td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>item10</td>
+                <td>description</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

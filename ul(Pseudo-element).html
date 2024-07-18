@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom icons with Pseudo-element</title>
+    <style>
+        ul.custom-icon {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.custom-icon {
+            content: normal;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: url('icon.png') no-repeat center center;
+            background-size: cover;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="custom-icons">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+</body>
+
+</html>

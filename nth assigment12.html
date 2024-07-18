@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth assignment</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: lightgray;
+        }
+        
+        li:nth-child(1) {
+            background-color: lightblue;
+        }
+        
+        li:nth-child(2n) {
+            background-color: lightcoral;
+        }
+        
+        li:nth-child(3n) {
+            background-color: lightseagreen;
+        }
+        
+        li:nth-child(2) {
+            background-color: lightslategray;
+        }
+        
+        li:nth-child(2n+1) {
+            background-color: blueviolet;
+        }
+        
+        li:nth-child(n+3) {
+            background-color: bisque;
+        }
+        
+        li:nth-child(-n+6) {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>css nth-child illustration</h2>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+            <li>list5</li>
+            <li>list6</li>
+            <li>list7</li>
+            <li>list8</li>
+            <li>list9</li>
+            <li>list10</li>
+        </ul>
+    </div>
+</body>
+
+</html>
