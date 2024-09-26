@@ -1,0 +1,49 @@
+<!-- LEFT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    .img{
+        left: 0%;
+        top: 0%;
+        animation-name: myanimation;
+        animation-duration: 10s;
+        animation-delay: 0.5s;
+        animation-direction: normal;
+        animation-iteration-count:infinite ;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        
+    }
+        
+    @keyframes myanimation{
+        0%{
+            left: 0%;
+            top: 0%;
+        }
+        25%{
+            left:60%;
+            top:0%;
+        }
+        75%{
+            left: 60%;
+            top:60%;
+        }
+        90%{
+            left: 0%;
+            top:60%;
+        }
+    }
+</style>
+</head>
+<body>
+    <img class="img" src="../image/2.jpg" style="width: 150px;">
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- Fading an Element In and Out -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.fade-box {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.fade-box.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+.fade-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="fade-box">I appear and disappear!</div>
+<button class="fade-button">Toggle Visibility</button>
+</body>
+</html>

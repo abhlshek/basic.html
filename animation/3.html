@@ -1,0 +1,32 @@
+<!-- Changing Size, Color, and Border Simultaneously -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .multi-transition {
+  background-color: #1abc9c;
+  color: antiquewhite;
+  border: 2px solid #16a085;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: center;
+  transition: background-color 0.5s ease, width 0.7s ease-in, border-radius 0.7s ease-out;
+}
+
+.multi-transition:hover {
+  background-color: #e74c3c;
+  width: 200px;
+  border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="multi-transition">hello</div>
+    <img class="multi-transition" src="../image/5.jpg" style="width: 250px;">
+</body>
+</html>
